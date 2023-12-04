@@ -1,0 +1,10 @@
+html
+latex
+*.exe
+*.o
+object_files\*
+*1.exe
+*1.dot
+*1.cpp
+graph\*
+*.exe

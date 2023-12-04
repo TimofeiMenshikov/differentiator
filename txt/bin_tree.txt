@@ -1,0 +1,29 @@
+{
+	{
+		{
+			nil
+		x
+			nil
+		}
+	POW
+		{
+			nil
+		4
+			nil
+		}
+	}
+ADD
+	{
+		{
+			nil
+		x
+			nil
+		}
+	ADD
+		{
+			nil
+		x
+			nil
+		}
+	}
+}

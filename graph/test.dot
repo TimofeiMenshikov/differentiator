@@ -1,0 +1,39 @@
+digraph G {
+rankdir = "TB";
+graph [splines=ortho];
+subgraph cluster0 {
+label = "struct Bin_tree bin_tree [000000a7f41ff280]";fontname="Helvetica,Arial,sans-serif";
+node [fontname="Helvetica,Arial,sans-serif" fontsize = "16" ];
+edge [fontname="Helvetica,Arial,sans-serif"];
+subgraph cluster1 {
+rankdir = "TB";
+label = "bin_tree variables"size [shape=box3d, label="size = 18"];
+tail_ptr [shape=box3d, label="tail pointer = [0000025f03112430]"];
+head_ptr [shape=box3d, label="head pointer = [0000025f03261c50]"];
+root_ptr [shape=box3d, label="root pointer = [0000025f03261c50]"];
+}
+subgraph cluster2 {
+rankdir = "BT";
+label = "bin tree elements"
+"node1"  [ label = "<f1> +  | { id = 1 | depth = 1 | self_ptr = [0000025f03261c50]  | left_child_ptr = [0000025f03261ca0] | right_child_ptr = [0000025f03112340] | type = BIN_OP} " shape = "Mrecord" color ="Red"];
+"node2"  [ label = "<f1> *  | { id = 2 | depth = 2 | self_ptr = [0000025f03261ca0]  | left_child_ptr = [0000025f03111fd0] | right_child_ptr = [0000025f031120c0] | type = BIN_OP} " shape = "Mrecord" color ="Red"];
+"node4"  [ label = "<f1> ^  | { id = 4 | depth = 3 | self_ptr = [0000025f03111fd0]  | left_child_ptr = [0000025f03112020] | right_child_ptr = [0000025f03112070] | type = BIN_OP} " shape = "Mrecord" color ="Red"];
+"node8"  [ label = "<f1> x  | { id = 8 | depth = 4 | self_ptr = [0000025f03112020]  | left_child_ptr = [0000000000000000] | right_child_ptr = [0000000000000000] | type = VAR} " shape = "Mrecord" color ="Blue"];
+"node9"  [ label = "<f1> 4.000000  | { id = 9 | depth = 4 | self_ptr = [0000025f03112070]  | left_child_ptr = [0000000000000000] | right_child_ptr = [0000000000000000] | type = NUM} " shape = "Mrecord" color ="Green"];
+"node5"  [ label = "<f1> *  | { id = 5 | depth = 3 | self_ptr = [0000025f031120c0]  | left_child_ptr = [0000025f03112390] | right_child_ptr = [0000025f031121b0] | type = BIN_OP} " shape = "Mrecord" color ="Red"];
+"node21"  [ label = "<f1> /  | { id = 21 | depth = 5 | self_ptr = [0000025f031121b0]  | left_child_ptr = [0000025f031123e0] | right_child_ptr = [0000025f03112610] | type = BIN_OP} " shape = "Mrecord" color ="Red"];
+"node20"  [ label = "<f1> 4.000000  | { id = 20 | depth = 5 | self_ptr = [0000025f03112390]  | left_child_ptr = [0000000000000000] | right_child_ptr = [0000000000000000] | type = NUM} " shape = "Mrecord" color ="Green"];
+"node42"  [ label = "<f1> 1.000000  | { id = 42 | depth = 6 | self_ptr = [0000025f031123e0]  | left_child_ptr = [0000000000000000] | right_child_ptr = [0000000000000000] | type = NUM} " shape = "Mrecord" color ="Green"];
+"node43"  [ label = "<f1> x  | { id = 43 | depth = 6 | self_ptr = [0000025f03112610]  | left_child_ptr = [0000000000000000] | right_child_ptr = [0000000000000000] | type = VAR} " shape = "Mrecord" color ="Blue"];
+"node3"  [ label = "<f1> 2.000000  | { id = 3 | depth = 2 | self_ptr = [0000025f03112340]  | left_child_ptr = [0000000000000000] | right_child_ptr = [0000000000000000] | type = NUM} " shape = "Mrecord" color ="Green"];
+"node1" -> "node2" [color = "Blue"];
+"node2" -> "node4" [color = "Blue"];
+"node4" -> "node8" [color = "Blue"];
+"node4" -> "node9" [color = "Green"];
+"node2" -> "node5" [color = "Green"];
+"node5" -> "node20" [color = "Blue"];
+"node5" -> "node21" [color = "Green"];
+"node21" -> "node42" [color = "Blue"];
+"node21" -> "node43" [color = "Green"];
+"node1" -> "node3" [color = "Green"];
+} } }
